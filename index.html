@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,19 +7,22 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="./assets/css/styles.css" >
     <link rel="shortcut icon" type="image/x-icon" href="./assets/image/favicon.ico">
-</head>
+ 
+  </head>
   <body>
     <div class="fundo">
+
         <div class="img">
             <img class="img3" src="./assets/image/fla3.png">
             <img  class="img1" src="./assets/image/fla1.png">
         </div>
+
             <div class="Calculadora">
         <p id="resultado"></p>
-        <table>
+        <table action="" name="Calculadora">
           <tr>
             <td><button class="botao cinza" onclick="clean()">AC</button></td>
-            <td><button class="botao cinza" onclick="insert('7')">+/-</button></td>
+            <td><button class="botao cinza" onclick="insert('+')">+/-</button></td>
             <td><button class="botao cinza" onclick="insert('%')">%</button></td>
             <td><button class="botao laranja"onclick="insert('/')">/</button></td>
           </tr>
@@ -28,7 +31,7 @@
             <td><button class="botao" onclick="insert('7')">7</button></td>
             <td><button class="botao" onclick="insert('8')">8</button></td>
             <td><button class="botao" onclick="insert('9')">9</button></td>
-            <td><button class="botao laranja"onclick="insert('x')">x</button></td>
+            <td><button class="botao laranja" onclick="insert('*')">x</button></td>
           </tr>
 
           <tr>
