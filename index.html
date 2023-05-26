@@ -7,7 +7,8 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="./assets/css/styles.css" >
     <link rel="shortcut icon" type="image/x-icon" href="./assets/image/favicon.ico">
- 
+    <script src="./assets/js/calculadora.js">
+    </script>
   </head>
   <body>
     <div class="fundo">
@@ -18,45 +19,46 @@
         </div>
 
             <div class="Calculadora">
-        <p id="resultado"></p>
-        <table action="" name="Calculadora">
+              <p id="resultado"></p>
+        
+        <table name="Calculadora">
           <tr>
-            <td><button class="botao cinza" onclick="clean()">AC</button></td>
-            <td><button class="botao cinza" onclick="insert('+')">+/-</button></td>
-            <td><button class="botao cinza" onclick="insert('%')">%</button></td>
-            <td><button class="botao laranja"onclick="insert('/')">/</button></td>
+            <td><button class="botao cinza" value="Delete" onclick="clean()">AC</button></td>
+            <td><button class="botao cinza" value="+/-" onclick="insert('+')">+/-</button></td>
+            <td><button class="botao cinza" value="%" onclick="insert('%')">%</button></td>
+            <td><button class="botao laranja" value="/" onclick="insert('/')">/</button></td>
           </tr>
 
           <tr>
-            <td><button class="botao" onclick="insert('7')">7</button></td>
-            <td><button class="botao" onclick="insert('8')">8</button></td>
-            <td><button class="botao" onclick="insert('9')">9</button></td>
-            <td><button class="botao laranja" onclick="insert('*')">x</button></td>
+            <td><button class="botao" value="7" onclick="insert('7')">7</button></td>
+            <td><button class="botao"value="8" onclick="insert('8')">8</button></td>
+            <td><button class="botao" value="9" onclick="insert('9')">9</button></td>
+            <td><button class="botao laranja" value="*" onclick="insert('*')">x</button></td>
           </tr>
 
           <tr>
-            <td><button class="botao" onclick="insert('4')">4</button></td>
-            <td><button class="botao" onclick="insert('5')">5</button></td>
-            <td><button class="botao"onclick="insert('6')">6</button></td>
-            <td><button class="botao laranja" onclick="insert('-')">-</button></td>
+            <td><button class="botao" value="4" onclick="insert('4')">4</button></td>
+            <td><button class="botao" value="5" onclick="insert('5')">5</button></td>
+            <td><button class="botao" value="6" onclick="insert('6')">6</button></td>
+            <td><button class="botao laranja" value="-" onclick="insert('-')">-</button></td>
           </tr>
 
           <tr>
-            <td><button class="botao" onclick="insert('1')">1</button></td>
-            <td><button class="botao"onclick="insert('2')">2</button></td>
-            <td><button class="botao"onclick="insert('3')">3</button></td>
-            <td><button class="botao laranja" onclick="insert('+')">+</button></td>
+            <td><button class="botao" value="1" onclick="insert('1')">1</button></td>
+            <td><button class="botao"value="2" onclick="insert('2')">2</button></td>
+            <td><button class="botao" value="3" onclick="insert('3')">3</button></td>
+            <td><button class="botao laranja" value="+" onclick="insert('+')">+</button></td>
           </tr>
 
           <tr>
-            <td colspan="2"><button class="botao zero" onclick="insert('0')">0</button></td>
-            <td><button class="botao" onclick="insert(',')">,</button></td>
-            <td><button class="botao laranja" onclick="calcular()">=</button></td>
+            <td colspan="2"><button class="botao zero" value="0" onclick="insert('0')">0</button></td>
+            <td><button class="botao" value="," onclick="insert(',')">,</button></td>
+            <td><button class="botao laranja"value="=" onclick="calcular()">=</button></td>
           </tr>
         </table>
+
       </div>
     </div>
   </body>
-  <script src="./assets/js/calculadora.js">
-  </script>
+ 
 </html>
